@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center><h1>Welcome to Login Page</h1></center>
+<hr>
+<div class="section">
+<p> User Name : </p>
+<input type="text" name = "name" id="username" >
+
+<p> Password : </p>
+<input type="password" name = "name" id="password" >
+
+<br><br><br>
+<button  onclick="login()">Submit</button>
+
+<script type="text/javascript">
+
+function login(){
+  var Uname=document.getElementById('username').value ;
+  var pass = document.getElementById('password').value;
+
+if (Uname == "Piyush" && pass == "12345"){
+  location.assign("http://127.0.0.1:5500/index2.html");
+}
+else {
+  window.alert("galat hai id ya password");
+}
+}
+
+
+</script>
+</div>
+
+</body>
+</html>
